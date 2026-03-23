@@ -175,3 +175,7 @@ MIT License — veja [LICENSE](LICENSE).
 Desenvolvido pela [CONIN Engenharia](https://conin-ia.com.br) para automatizar operacoes de construcao civil com o Sienge.
 
 *Built by CONIN Engenharia to automate construction operations with Sienge ERP.*
+
+---
+
+<sub>Sienge e marca registrada da Softplan Planejamento e Sistemas S.A. Este projeto e desenvolvido de forma independente pela CONIN Engenharia e nao possui afiliacao, endosso ou vinculo com a Softplan.</sub>
