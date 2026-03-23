@@ -18,17 +18,9 @@
 
 ## O que e este projeto?
 
-O Sienge e o sistema de gestao (ERP) mais utilizado por construtoras no Brasil. Ele gerencia obras, financeiro, compras, contabilidade e muito mais. O Sienge oferece uma **API** — uma forma de sistemas externos acessarem esses dados de forma automatizada.
+O [Sienge](https://www.sienge.com.br/) e o sistema de gestao (ERP) mais utilizado por construtoras no Brasil. Ele gerencia obras, financeiro, compras, contabilidade e outros processos da construcao civil. A plataforma disponibiliza uma **API REST** que permite integrar esses dados com sistemas externos.
 
-Porem, ate hoje, nao existia uma biblioteca pronta em Python para consumir essa API. Cada empresa que precisava integrar com o Sienge tinha que escrever o codigo de conexao do zero.
-
-O **sienge-python** resolve isso. E uma biblioteca que encapsula toda a comunicacao com a API do Sienge, permitindo que desenvolvedores acessem dados de obras, financeiro, compras e outros modulos com poucas linhas de codigo — sem se preocupar com autenticacao, paginacao, limites de requisicao ou tratamento de erros.
-
-### Na pratica
-
-**Sem esta biblioteca**, para listar os titulos a pagar de uma empresa, um desenvolvedor precisaria escrever ~50 linhas de codigo lidando com autenticacao HTTP, paginacao manual, controle de limite de requisicoes e tratamento de erros.
-
-**Com esta biblioteca:**
+O **sienge-python** e um cliente Python que simplifica essa integracao. A biblioteca cuida de autenticacao, paginacao, controle de limites de requisicao e tratamento de erros — permitindo que o desenvolvedor acesse os dados do Sienge com poucas linhas de codigo.
 
 ```python
 from sienge import SiengeClient
@@ -39,8 +31,6 @@ titulos = client.financeiro.list_titulos(start_date="2026-01-01")
 for t in titulos:
     print(f"{t.numero_documento}: R$ {t.valor_total:,.2f}")
 ```
-
-Toda a complexidade tecnica fica encapsulada — o desenvolvedor foca no que importa.
 
 ---
 
