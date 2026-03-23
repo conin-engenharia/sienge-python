@@ -1,8 +1,20 @@
-# sienge-python
+<p align="center">
+  <img src="assets/logo-conin.png" alt="CONIN Engenharia" width="400">
+</p>
 
-**Primeiro cliente Python para a API REST do Sienge** — o ERP mais usado na construcao civil brasileira.
+<h1 align="center">sienge-python</h1>
 
-*The first Python client for the Sienge REST API — Brazil's leading construction ERP.*
+<p align="center">
+  <strong>Primeiro cliente Python para a API REST do Sienge</strong> — o ERP mais usado na construcao civil brasileira.<br>
+  <em>The first Python client for the Sienge REST API — Brazil's leading construction ERP.</em>
+</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/sienge-python/"><img src="https://img.shields.io/pypi/v/sienge-python" alt="PyPI"></a>
+  <a href="https://github.com/conin-engenharia/sienge-python/actions"><img src="https://github.com/conin-engenharia/sienge-python/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/conin-engenharia/sienge-python/blob/main/LICENSE"><img src="https://img.shields.io/github/license/conin-engenharia/sienge-python" alt="License"></a>
+  <img src="https://img.shields.io/pypi/pyversions/sienge-python" alt="Python">
+</p>
 
 ---
 
