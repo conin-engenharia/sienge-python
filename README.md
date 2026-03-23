@@ -10,11 +10,37 @@
 </p>
 
 <p align="center">
-  <a href="https://pypi.org/project/sienge-python/"><img src="https://img.shields.io/pypi/v/sienge-python" alt="PyPI"></a>
   <a href="https://github.com/conin-engenharia/sienge-python/actions"><img src="https://github.com/conin-engenharia/sienge-python/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/conin-engenharia/sienge-python/blob/main/LICENSE"><img src="https://img.shields.io/github/license/conin-engenharia/sienge-python" alt="License"></a>
-  <img src="https://img.shields.io/pypi/pyversions/sienge-python" alt="Python">
 </p>
+
+---
+
+## O que e este projeto?
+
+O Sienge e o sistema de gestao (ERP) mais utilizado por construtoras no Brasil. Ele gerencia obras, financeiro, compras, contabilidade e muito mais. O Sienge oferece uma **API** — uma forma de sistemas externos acessarem esses dados de forma automatizada.
+
+Porem, ate hoje, nao existia uma biblioteca pronta em Python para consumir essa API. Cada empresa que precisava integrar com o Sienge tinha que escrever o codigo de conexao do zero.
+
+O **sienge-python** resolve isso. E uma biblioteca que encapsula toda a comunicacao com a API do Sienge, permitindo que desenvolvedores acessem dados de obras, financeiro, compras e outros modulos com poucas linhas de codigo — sem se preocupar com autenticacao, paginacao, limites de requisicao ou tratamento de erros.
+
+### Na pratica
+
+**Sem esta biblioteca**, para listar os titulos a pagar de uma empresa, um desenvolvedor precisaria escrever ~50 linhas de codigo lidando com autenticacao HTTP, paginacao manual, controle de limite de requisicoes e tratamento de erros.
+
+**Com esta biblioteca:**
+
+```python
+from sienge import SiengeClient
+
+client = SiengeClient("sua-empresa", "usuario-api", "senha-api")
+titulos = client.financeiro.list_titulos(start_date="2026-01-01")
+
+for t in titulos:
+    print(f"{t.numero_documento}: R$ {t.valor_total:,.2f}")
+```
+
+Toda a complexidade tecnica fica encapsulada — o desenvolvedor foca no que importa.
 
 ---
 
