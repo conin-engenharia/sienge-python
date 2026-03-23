@@ -172,7 +172,7 @@ MIT License — veja [LICENSE](LICENSE).
 
 ## Sobre / About
 
-Desenvolvido pela [CONIN Engenharia](https://conin-ia.com.br) para automatizar operacoes de construcao civil com o Sienge.
+Desenvolvido pela [CONIN Engenharia](https://conin.com.br) para automatizar operacoes de construcao civil com o Sienge.
 
 *Built by CONIN Engenharia to automate construction operations with Sienge ERP.*
 
